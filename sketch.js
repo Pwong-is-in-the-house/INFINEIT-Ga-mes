@@ -27,7 +27,8 @@ function setup() {
   ground = createSprite(400,350,800,10);
   ground.x=ground.width/2;
   ground.visible=false;
-  
+  foodGroup= new Group();
+  obstacleGroup= new Group();
 }
 
 function draw() { 
