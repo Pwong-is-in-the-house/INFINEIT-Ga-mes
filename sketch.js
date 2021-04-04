@@ -18,7 +18,7 @@ function setup() {
   backgr.addImage(backImage);
   backgr.scale=1.5;
   backgr.x=backgr.width/2;
-  backgr.velocityX=4;
+  backgr.velocityX=-4;
   
   player = createSprite(100,340,20,50);
   player.addAnimation("Running",player_running);
