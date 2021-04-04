@@ -1,7 +1,7 @@
 var backImage,backgr;
 var player, player_running;
 var ground,ground_img;
-var bananaImage,foodGroup,obstacleGroup;
+var bananaImage,foodGroup,obstacleGroup,obstacleImg;
 var END =0;
 var PLAY =1;
 var gameState = PLAY;
@@ -10,6 +10,7 @@ function preload(){
   backImage=loadImage("jungle.jpg");
   player_running = loadAnimation("Monkey_01.png","Monkey_02.png","Monkey_03.png","Monkey_04.png","Monkey_05.png","Monkey_06.png","Monkey_07.png","Monkey_08.png","Monkey_09.png","Monkey_10.png");
 bananaImage=loadImage("banana.png")
+  obstacleImg=loadImage("stone.png")
 }
 
 function setup() {
@@ -84,7 +85,7 @@ function spawnObstacles() {
     var obstacle = createSprite(800,320,10,40);
     obstacle.velocityX = -6;
     
-    obstacle.addImage(obstaceImage);
+    obstacle.addImage(obstacleImg);
     obstacle.scale=0.15;
          
     obstacle.lifetime = 300;
