@@ -79,3 +79,15 @@ function spawnfood(){
     foodGroup.add(banana);
   }
 }
+function spawnObstacles() {
+  if(frameCount % 300 === 0) {
+    var obstacle = createSprite(800,320,10,40);
+    obstacle.velocityX = -6;
+    
+    obstacle.addImage(obstaceImage);
+    obstacle.scale=0.15;
+         
+    obstacle.lifetime = 300;
+    obstacleGroup.add(obstacle);
+  }
+}
