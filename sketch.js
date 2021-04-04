@@ -66,6 +66,8 @@ else if(gameState=== END){
   fill(255);
   text("Game Over!",300,200)
 }
+  spawnFood();
+  spawnObstacles();
   drawSprites();
 }
 function spawnfood(){
